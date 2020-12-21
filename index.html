@@ -5,79 +5,68 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="bt11.css">
 	<style>
-		.frames{
+.frames{
 	width: 500px;
 	height: 400px;
-	background: gray;
+	background: rgba(0,0,0,.4);
 	position: relative;
 	top: 80px;
 	left: 35%;
-	border-radius: 50%;
+	border-radius: 40%;
 }
-.frames .yes{
-	width: 150px;
-	height: 40px;
-	background: red;
-	position: absolute;
-	top: 50%;
-	left: 15%;
-	z-index: 0;	
-}
-label a{
+label a input{
 	font-size: 30px;
 	display: block;
 	text-align: center;
 	text-decoration: none;
 	color: black;
-}
-.container{
-	width: 150px;
-	height: 40px;
 	background: red;
-	position: absolute;
-	top: 50%;
-	left: 15%;
-	z-index: 1;
-	opacity: 0;
 }
-.frames .no{
-	width: 150px;
-	height: 40px;
+.no1 a input:hover{
+	transform: scale(1.2);
 	background: yellow;
-	position: absolute;
-	top: 50%;
-	left: 55%;
+
 }
-.container:hover{
-	opacity: 1;
+.yes1 a input:hover{
 	transform: scale(1.2);
-}
-.no:hover{
-	transform: scale(1.2);
+	background: yellow;
 }
 p{
 	display: block;
 	font-size: 40px;
 	/*margin-left: 1em;*/
 	position: absolute;
+	left: 12%;
+	top: 9%;
+}
+.paddin1{
+	padding: 0 0.82em;
+}
+.yes1{
+	position: absolute;
+	top: 55%;
 	left: 15%;
-	top: 10%;
+}
+.no1{
+	position: absolute;
+	top: 55%;
+	right: 15%;
 }
 
 	</style>
 </head>
 <body>
 	<div class="frames">
-		<p>Bạn có crush không??</p>
-		<div class="yes">
-			<label><a href="#">có</a></label>
-		</div>
-		<div class="container">
-				<label><a href="#">không =)</a></label>
-			</div>
-		<div class="no">
-			<label><a href="#">không =))</a></label>
-		</div>
+		<p>Bạn đã có ai trong mùa đông lạnh giá này chưa??</p>
+		<label class="yes1">
+				<a href="#"><input type="button" class="paddin1" onclick="alert('Chúc mừng bạn')" value="Đã có"/></a>
+		</label>
+		<label class="no1">
+			<a href="#"><input type="button"  onclick="alert('Nếu bạn không ngại cứ ib mình')" value="Chưa có"/></a>
+		</label>		
 	</div>
+	<script type="text/javascript" language="javascript">
+		var person = alert("Trang này hơi xấu mọi người thông cảm");
+	</script>
 </body>
 </html>
