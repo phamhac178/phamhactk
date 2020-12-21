@@ -1,8 +1,83 @@
-<h1>Pham Văn Hac</h1>
-<h1>Nguyễn Hữu Danh</h1>
-<h1>Đỗ Quốc Đông</h1>
-<h1>Nguyễn Thành An</h1>
-<h1>Lê Tiên Đạt</h1>
-<h1>Ngô Tấn Phúc</h1>
-<h1>Trần Trọng Bảo</h1>
-<h1>Võ Minh Quốc</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="bt11.css">
+	<style>
+		.frames{
+	width: 500px;
+	height: 400px;
+	background: gray;
+	position: relative;
+	top: 80px;
+	left: 35%;
+	border-radius: 50%;
+}
+.frames .yes{
+	width: 150px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	z-index: 0;	
+}
+label a{
+	font-size: 30px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.container{
+	width: 150px;
+	height: 40px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	z-index: 1;
+	opacity: 0;
+}
+.frames .no{
+	width: 150px;
+	height: 40px;
+	background: yellow;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+}
+.container:hover{
+	opacity: 1;
+	transform: scale(1.2);
+}
+.no:hover{
+	transform: scale(1.2);
+}
+p{
+	display: block;
+	font-size: 40px;
+	/*margin-left: 1em;*/
+	position: absolute;
+	left: 15%;
+	top: 10%;
+}
+
+	</style>
+</head>
+<body>
+	<div class="frames">
+		<p>Bạn có crush không??</p>
+		<div class="yes">
+			<label><a href="#">có</a></label>
+		</div>
+		<div class="container">
+				<label><a href="#">không =)</a></label>
+			</div>
+		<div class="no">
+			<label><a href="#">không =))</a></label>
+		</div>
+	</div>
+</body>
+</html>
